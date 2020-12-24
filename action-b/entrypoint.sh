@@ -15,6 +15,7 @@ rErrors=()
 rInfos=()
 
 files=$(git ls-files --eol $1)
+printf "$files\n"
 
 
 # echo "$files"
@@ -26,7 +27,7 @@ while IFS= read -r line; do
     working_tree=$(echo $line |awk 'match($0, / w\/(lf|crlf|mixed|none) /) { print substr( $0, RSTART+3, RLENGTH-4 )}')
     expected=$(echo $line |awk 'match($0, / eol=(lf|crlf|mixed|none) /) { print substr( $0, RSTART+5, RLENGTH-6 )}')
 
-    # echo "$file_name -- ##$attribute##"
+    echo "$file_name -- ##$attribute## -- **$working_tree** -- @@$expected@@"
     if [[ "$attribute" == "text" ]]
     then
         if [[ -z "$expected" ]]
