@@ -5,7 +5,3 @@ This course will walk you through writing your first action and using it with a 
 **Ready to get started? Navigate to the first issue.**
 
 this is a modification
-
-'''
-RUN  apt update && apt install -y  git
-''''
