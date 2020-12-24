@@ -1,6 +1,8 @@
 #!/bin/bash
 
 printf "check EOL in: $1\n"
+printf "current path : \n"
+pwd
 
 BOLD_RED='\033[1;31m'
 BOLD_GREEN='\033[1;32m'
