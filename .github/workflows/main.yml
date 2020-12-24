@@ -12,5 +12,5 @@ jobs:
 
       - uses: ./action-b
         with: # omit this mapping to use default path
-          path: ../..
+          path: ../../hello-github-actions
 
