@@ -9,3 +9,10 @@ jobs:
       - uses: ./action-a
         with:
           MY_NAME: "Mona"
+    name: check_eol
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: ./action-b
+        with:
+          MY_NAME: "Mona"
