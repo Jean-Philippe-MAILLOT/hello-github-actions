@@ -1,4 +1,4 @@
-FROM alpine:3.12 as check_eol
+FROM ubuntu:latest as check_eol
 
 RUN  apt update && apt install -y  git
 
