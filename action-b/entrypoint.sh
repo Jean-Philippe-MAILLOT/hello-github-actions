@@ -3,6 +3,7 @@
 printf "check EOL in: $1\n"
 printf "current path : \n"
 pwd
+ls -la
 
 BOLD_RED='\033[1;31m'
 BOLD_GREEN='\033[1;32m'
